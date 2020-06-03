@@ -9,15 +9,14 @@ const sizeToFontSize = {
 
 export const SBLinks = ({ links, size }) => (
   <Fragment>
-    {links &&
-      links.map(({ href, title = href }, index) => (
-        <Fragment key={index}>
-          {index !== 0 ? ' | ' : ''}
-          <a href={href} style={{ fontSize: sizeToFontSize[size] }}>
-            {title}
-          </a>
-        </Fragment>
-      ))}
+    {links.map(({ href, title = href }, index) => (
+      <Fragment key={index}>
+        {index !== 0 ? ' | ' : ''}
+        <a href={href} style={{ fontSize: sizeToFontSize[size] }}>
+          {title}
+        </a>
+      </Fragment>
+    ))}
   </Fragment>
 );
 
