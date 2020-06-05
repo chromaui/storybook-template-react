@@ -1,14 +1,11 @@
 import React from 'react';
-import { SBHeader } from './SBHeader';
+import PropTypes from 'prop-types';
 
-export const SBScreen = () => (
+import { Header } from './Header';
+
+export const HomePage = ({ user, onLogin, onLogout }) => (
   <article>
-    <SBHeader
-      links={[
-        { title: 'Docs', href: 'https://docs.storybook.js.com' },
-        { title: 'Learn Storybook', href: 'https://learnstorybook.com' },
-      ]}
-    />
+    <Header user={user} onLogin={onLogin} onLogout={onLogout} />
 
     <section>
       This page demonstrates that you can build full application screens using Storybook. Although
@@ -21,3 +18,12 @@ export const SBScreen = () => (
     </section>
   </article>
 );
+HomePage.propTypes = {
+  user: PropTypes.shape({}),
+  onLogin: PropTypes.func.isRequired,
+  onLogout: PropTypes.func.isRequired,
+};
+
+HomePage.defaultProps = {
+  user: null,
+};
