@@ -2,6 +2,76 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 <Meta title="Storybook Example/Introduction" />
 
+<style>{`
+  .feature-link {
+    display: block;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    margin: 4px;
+    padding: 8px;
+  }
+
+  .tip {
+    background-color: lime;
+    color: green;
+    border-radius: 12px;
+    padding: 0 8px;
+  }
+`}</style>
+
 # Welcome to Storybook
 
-Bla bla bla
+Storybook helps you build UI components in isolation from your app's business logic, data, and context.
+That makes it easy to develop hard-to-reach states. Save these UI states as _stories_ to revisit during development, testing, or QA.
+
+Browse example stories now by navigating to them in the sidebar.
+View their code in the `src/storybook-examples` directory to learn how they work.
+We recommend building UIs with a [component-driven](https://blog.hichroma.com/component-driven-development-ce1109d56c8e) process starting with atomic components and ending with pages.
+
+## Configure
+
+<a class="feature-link" href="https://storybook.js.org/docs/presets" target="_blank">
+  <span class="icon" />
+  <h3>Presets for popular tools</h3>
+  Easy setup for Typescript, SCSS and more.
+</a>
+<a class="feature-link" href="https://storybook.js.org/docs/webpack" target="_blank">
+  <span class="icon" />
+  <h3>Build configuration</h3>
+  How to customize Webpack and Babel
+</a>
+<a class="feature-link" href="https://storybook.js.org/docs/styling" target="_blank">
+  <span class="icon" />
+  <h3>Styling</h3>
+  How to load and configure CSS libraries
+</a>
+<a class="feature-link" href="https://storybook.js.org/docs/data" target="_blank">
+  <span class="icon" />
+  <h3>Data</h3>
+  Providers and mocking for data libraries
+</a>
+
+## Learn
+
+<a class="feature-link" href="https://storybook.js.org/docs" target="_blank">
+  <span class="icon" />
+  <h3>Storybook documentation</h3>
+  Configure, customize, and extend
+</a>
+<a class="feature-link" href="https://www.learnstorybook.com" target="_blank">
+  <span class="icon" />
+  <h3>In-depth guides</h3>
+  Best practices from leading teams
+</a>
+<a class="feature-link" href="https://github.com/storybookjs/storybook" target="_blank">
+  <span class="icon" />
+  <h3>GitHub project</h3>
+  View the source and add issues
+</a>
+<a class="feature-link" href="?" target="_blank">
+  <span class="icon" />
+  <h3>Discord Chat</h3>
+  Chat with maintainers and the community
+</a>
+
+<span class="tip">Tip</span> Edit the markdown in <code>src/storybook-examples/welcome.mdx</code>
