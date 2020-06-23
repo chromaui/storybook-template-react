@@ -6,15 +6,16 @@ import * as HeaderStories from './Header.stories';
 export default {
   title: 'Storybook Example/HomePage',
   component: HomePage,
-  parameters: { actions: { argTypesRegex: '^on.*' } },
 };
 
-export const LoggedIn = (args) => <HomePage {...args} />;
+const HomePageStory = (args) => <HomePage {...args} />;
+
+export const LoggedIn = HomePageStory.bind({});
 LoggedIn.args = {
   ...HeaderStories.LoggedIn.args,
 };
 
-export const LoggedOut = LoggedIn.bind();
+export const LoggedOut = HomePageStory.bind({});
 LoggedOut.args = {
   ...HeaderStories.LoggedOut.args,
 };
