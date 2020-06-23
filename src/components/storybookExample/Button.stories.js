@@ -7,24 +7,26 @@ export default {
   component: Button,
 };
 
-export const Primary = (args) => <Button {...args} />;
+const ButtonStory = (args) => <Button {...args} />;
+
+export const Primary = ButtonStory.bind({});
 Primary.args = {
   primary: true,
   children: 'Primary',
 };
 
-export const Secondary = Primary.bind();
+export const Secondary = ButtonStory.bind({});
 Secondary.args = {
   children: 'Secondary',
 };
 
-export const Large = Primary.bind();
+export const Large = ButtonStory.bind({});
 Large.args = {
   size: 'large',
   children: 'Large',
 };
 
-export const Small = Primary.bind();
+export const Small = ButtonStory.bind({});
 Small.args = {
   size: 'small',
   children: 'Small',
