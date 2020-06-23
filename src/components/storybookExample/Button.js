@@ -34,6 +34,9 @@ const sizeStyles = {
   },
 };
 
+/**
+ * Primary UI component for user interaction
+ */
 export const Button = ({ primary, size, children }) => (
   <button
     style={{ ...baseStyles, ...modeStyles[primary ? 'primary' : 'secondary'], ...sizeStyles[size] }}
@@ -43,8 +46,17 @@ export const Button = ({ primary, size, children }) => (
 );
 
 Button.propTypes = {
+  /**
+   * Is this the principal CTA on the page?
+   */
   primary: PropTypes.bool,
+  /**
+   * How large should the button be?
+   */
   size: PropTypes.oneOf(Object.keys(sizeStyles)),
+  /**
+   * Button contents
+   */
   children: PropTypes.node.isRequired,
 };
 
