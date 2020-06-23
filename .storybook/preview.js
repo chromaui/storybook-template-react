@@ -1,4 +1,7 @@
 export const parameters = {
+  actions: {
+    argTypesRegex: '^on.*',
+  },
   backgrounds: {
     values: [
       { name: 'green', value: 'green' },

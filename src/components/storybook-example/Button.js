@@ -37,9 +37,10 @@ const sizeStyles = {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, size, children }) => (
+export const Button = ({ primary, size, children, ...props }) => (
   <button
     style={{ ...baseStyles, ...modeStyles[primary ? 'primary' : 'secondary'], ...sizeStyles[size] }}
+    {...props}
   >
     {children}
   </button>
