@@ -8,14 +8,14 @@ export default {
   component: HomePage,
 };
 
-const HomePageStory = (args) => <HomePage {...args} />;
+const Story = (args) => <HomePage {...args} />;
 
-export const LoggedIn = HomePageStory.bind({});
+export const LoggedIn = Story.bind({});
 LoggedIn.args = {
   ...HeaderStories.LoggedIn.args,
 };
 
-export const LoggedOut = HomePageStory.bind({});
+export const LoggedOut = Story.bind({});
 LoggedOut.args = {
   ...HeaderStories.LoggedOut.args,
 };

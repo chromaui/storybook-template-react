@@ -7,12 +7,12 @@ export default {
   component: Header,
 };
 
-const HeaderStory = (args) => <Header {...args} />;
+const Story = (args) => <Header {...args} />;
 
-export const LoggedIn = HeaderStory.bind({});
+export const LoggedIn = Story.bind({});
 LoggedIn.args = {
   user: {},
 };
 
-export const LoggedOut = HeaderStory.bind({});
+export const LoggedOut = Story.bind({});
 LoggedOut.args = {};
