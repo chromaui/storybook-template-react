@@ -9,17 +9,11 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) =>
       <span className="icon" />
       <h1>Acme</h1>
       {user ? (
-        <Button size="medium" onClick={onLogout}>
-          Log out
-        </Button>
+        <Button size="medium" onClick={onLogout} label="Log out" />
       ) : (
         <div>
-          <Button size="medium" onClick={onLogin}>
-            Log in
-          </Button>
-          <Button primary size="medium" onClick={onCreateAccount}>
-            Sign up
-          </Button>
+          <Button size="medium" onClick={onLogin} label="Log in" />
+          <Button primary size="medium" onClick={onCreateAccount} label="Sign up" />
         </div>
       )}
     </header>

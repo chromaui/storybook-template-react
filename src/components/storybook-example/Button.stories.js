@@ -15,22 +15,22 @@ const Story = (args) => <Button {...args} />;
 export const Primary = Story.bind({});
 Primary.args = {
   primary: true,
-  children: 'Primary',
+  label: 'Primary',
 };
 
 export const Secondary = Story.bind({});
 Secondary.args = {
-  children: 'Secondary',
+  label: 'Secondary',
 };
 
 export const Large = Story.bind({});
 Large.args = {
   size: 'large',
-  children: 'Large',
+  label: 'Large',
 };
 
 export const Small = Story.bind({});
 Small.args = {
   size: 'small',
-  children: 'Small',
+  label: 'Small',
 };

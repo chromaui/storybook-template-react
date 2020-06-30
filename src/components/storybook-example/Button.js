@@ -37,7 +37,7 @@ const sizeStyles = {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, children, ...props }) => (
+export const Button = ({ primary, backgroundColor, size, label, ...props }) => (
   <button
     style={{
       ...baseStyles,
@@ -47,7 +47,7 @@ export const Button = ({ primary, backgroundColor, size, children, ...props }) =
     }}
     {...props}
   >
-    {children}
+    {label}
   </button>
 );
 
@@ -67,7 +67,7 @@ Button.propTypes = {
   /**
    * Button contents
    */
-  children: PropTypes.node.isRequired,
+  label: PropTypes.string.isRequired,
 };
 
 Button.defaultProps = {
