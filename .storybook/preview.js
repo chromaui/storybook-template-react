@@ -4,9 +4,9 @@ export const parameters = {
   },
   backgrounds: {
     values: [
-      { name: 'green', value: 'green' },
-      { name: 'orange', value: 'orange' },
-      { name: 'pink', value: 'pink' },
+      { name: 'black', value: '#333' },
+      { name: 'grey', value: '#999' },
+      { name: 'white', value: '#fff' },
     ],
   },
 };
