@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { HomePage } from './HomePage';
+import { Page } from './Page';
 import * as HeaderStories from './Header.stories';
 
 export default {
-  title: 'Storybook Example/HomePage',
-  component: HomePage,
+  title: 'Storybook Example/Page',
+  component: Page,
 };
 
-const Story = (args) => <HomePage {...args} />;
+const Story = (args) => <Page {...args} />;
 
 export const LoggedIn = Story.bind({});
 LoggedIn.args = {

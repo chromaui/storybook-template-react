@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Header } from './Header';
 
-export const HomePage = ({ user, onLogin, onLogout }) => (
+export const Page = ({ user, onLogin, onLogout }) => (
   <article>
     <Header user={user} onLogin={onLogin} onLogout={onLogout} />
 
@@ -44,12 +44,12 @@ export const HomePage = ({ user, onLogin, onLogout }) => (
     </section>
   </article>
 );
-HomePage.propTypes = {
+Page.propTypes = {
   user: PropTypes.shape({}),
   onLogin: PropTypes.func.isRequired,
   onLogout: PropTypes.func.isRequired,
 };
 
-HomePage.defaultProps = {
+Page.defaultProps = {
   user: null,
 };
