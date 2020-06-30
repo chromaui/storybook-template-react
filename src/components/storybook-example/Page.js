@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import { Header } from './Header';
 
-export const Page = ({ user, onLogin, onLogout }) => (
+export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <article>
-    <Header user={user} onLogin={onLogin} onLogout={onLogout} />
+    <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />
 
     <h2>Pages in Storybook</h2>
 
@@ -48,6 +48,7 @@ Page.propTypes = {
   user: PropTypes.shape({}),
   onLogin: PropTypes.func.isRequired,
   onLogout: PropTypes.func.isRequired,
+  onCreateAccount: PropTypes.func.isRequired,
 };
 
 Page.defaultProps = {
