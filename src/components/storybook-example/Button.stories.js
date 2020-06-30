@@ -5,6 +5,9 @@ import { Button } from './Button';
 export default {
   title: 'Storybook Example/Button',
   component: Button,
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
 };
 
 const Story = (args) => <Button {...args} />;

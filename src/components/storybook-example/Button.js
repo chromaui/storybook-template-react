@@ -37,9 +37,14 @@ const sizeStyles = {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, size, children, ...props }) => (
+export const Button = ({ primary, backgroundColor, size, children, ...props }) => (
   <button
-    style={{ ...baseStyles, ...modeStyles[primary ? 'primary' : 'secondary'], ...sizeStyles[size] }}
+    style={{
+      ...baseStyles,
+      ...modeStyles[primary ? 'primary' : 'secondary'],
+      ...sizeStyles[size],
+      ...(backgroundColor && { backgroundColor }),
+    }}
     {...props}
   >
     {children}
@@ -51,6 +56,10 @@ Button.propTypes = {
    * Is this the principal CTA on the page?
    */
   primary: PropTypes.bool,
+  /**
+   * What background color to use
+   */
+  backgroundColor: PropTypes.string,
   /**
    * How large should the button be?
    */
