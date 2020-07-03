@@ -2,35 +2,40 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const baseStyles = {
-  border: '1px solid #ddd',
+  fontFamily: '"Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  fontWeight: 700,
+
+  border: 0,
+  borderRadius: '3em',
+  cursor: 'pointer',
+  display: 'inline-block',
+  lineHeight: 1,
 };
 
 const modeStyles = {
   primary: {
     color: 'white',
-    backgroundColor: 'blue',
+    backgroundColor: '#1EA7FD',
   },
   secondary: {
-    color: '#999',
+    color: '#333',
     backgroundColor: 'transparent',
+    boxShadow: 'rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset',
   },
 };
 
 const sizeStyles = {
   small: {
     fontSize: '12px',
-    borderRadius: '8px',
-    padding: '8px',
+    padding: '10px 16px',
   },
   medium: {
     fontSize: '14px',
-    borderRadius: '12px',
-    padding: '12px',
+    padding: '11px 20px',
   },
   large: {
     fontSize: '16px',
-    borderRadius: '16px',
-    padding: '16px',
+    padding: '12px 24px',
   },
 };
 
@@ -53,7 +58,7 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => (
 
 Button.propTypes = {
   /**
-   * Is this the principal CTA on the page?
+   * Is this the principal call to action on the page?
    */
   primary: PropTypes.bool,
   /**
