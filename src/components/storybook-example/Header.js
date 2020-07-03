@@ -12,7 +12,7 @@ const css = `
     align-items: center;
     justify-content: space-between;
   }
-  
+
   svg {
     display: inline-block;
     vertical-align: top;
@@ -25,6 +25,10 @@ const css = `
     margin: 6px 0 6px 10px;
     display: inline-block;
     vertical-align: top;
+  }
+
+  button + button {
+    margin-left: 10px;
   }
 `;
 
@@ -58,7 +62,6 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) =>
           ) : (
             <>
               <Button size="small" onClick={onLogin} label="Log in" />
-              <span style={{ display: 'inline-block', marginRight: 10 }}></span>
               <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
             </>
           )}
