@@ -87,8 +87,9 @@ export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
         <a
           href="https://blog.hichroma.com/component-driven-development-ce1109d56c8e"
           target="_blank"
+          rel="noopener noreferrer"
         >
-          component-driven
+          <strong>component-driven</strong>
         </a>{' '}
         process starting with atomic components and ending with pages.
       </p>
@@ -109,11 +110,11 @@ export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
       </ul>
       <p>
         Get a guided tutorial on component-driven development at{' '}
-        <a href="https://www.learnstorybook.com" target="_blank">
+        <a href="https://www.learnstorybook.com" target="_blank" rel="noopener noreferrer">
           Learn Storybook
         </a>
         . Read more in the{' '}
-        <a href="https://storybook.js.org/docs" target="_blank">
+        <a href="https://storybook.js.org/docs" target="_blank" rel="noopener noreferrer">
           docs
         </a>
         .
